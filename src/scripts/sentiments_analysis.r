@@ -10,10 +10,6 @@ library(here)
 greek_negative_words <-
   scan(file=here("src", "data", "greek", "sentiments_lexicon", "negative_words.txt"), what = "word")
 
-for (word in intersect(greek_negative_words, to_hermes)) {
-  greek_negative_words
-}
-
 greek_positive_words <-
   scan(file=here("src", "data", "greek", "sentiments_lexicon", "positive_words.txt"), what = "word")
 
