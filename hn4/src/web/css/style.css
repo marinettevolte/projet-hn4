@@ -27,6 +27,7 @@ html {
   overflow-x: hidden;
   overscroll-behavior-y: none;
   scroll-behavior: smooth;
+  font-family: var(--fonts-content);
 }
 
 body {
@@ -64,7 +65,6 @@ section {
     #e4c4ec,
     #e4c2ec
   );
-  /* box-shadow: rgb(255, 255, 255) 0px 15px 15px 0px; */
 }
 
 /* home */
@@ -98,14 +98,10 @@ section {
   opacity: 0.15;
 }
 
-.container-home-section > div > p {
-  margin-top: 5px;
-}
-.container-home-section > div > p,
-.container-home-section > div > span {
+.container-home-section p,
+.container-home-section span {
   font-size: 17px;
   font-weight: 500;
-  text-justify: auto;
 }
 
 .container-home-section > h1,
@@ -208,7 +204,7 @@ section {
 }
 .container-collect-data-section > ol > li,
 .container-collect-data-section > div > img {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 500;
   line-height: 1.5;
   opacity: 1;
@@ -227,40 +223,52 @@ section {
   max-height: 500vh;
   font-family: var(--fonts-content);
   background: var(--bg-section);
+  font-size: 17px;
+  color: black;
+  text-justify: inter-word;
+  line-height: 1.5;
+  font-weight: 500;
 }
 .container-voyant-tools-section img {
   width: 70%;
   margin: 0 auto;
 }
-.container-voyant-tools-section > h1 {
-  position: relative;
-  color: black;
-}
-.container-voyant-tools-section > p {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.5;
-  opacity: 1;
-  text-justify: inter-word;
-
-}
 
 /* scripts r section */
 .container-scripts-r-section {
-  padding: 10vh 100px 0px 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  justify-content: center;
+  padding: 0px 100px;
   background-color: var(--mintcream);
   min-height: 300vh;
   max-height: 300vh;
-  display: flex;
-  flex-direction: column;
   background: var(--bg-section);
   color: black;
-  font-size: 20px;
+  font-size: 17px;
+  position: relative;
+  font-family: var(--fonts-content);
+  text-justify: inter-word;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.container-scripts-r-section p,
+.container-scripts-r-section img
+.container-scripts-r-section > p > a {
+  position: relative;
+  font-family: var(--fonts-content);
 }
 
 .container-scripts-r-section img {
   width: 70%;
+  max-height: 25rem;
   margin: 0 auto;
+  font-family: var(--fonts-content);
+
 }
 
 .container-scripts-r-section-lemmatize {
@@ -278,11 +286,27 @@ section {
 
 /* web site section */
 .container-web-section {
-  padding: 10vh 100px 0px 100px;
-  min-height: 100vh;
-  max-height: 100vh;
+  position: relative;
   display: flex;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  justify-content: center;
+  padding: 0px 100px;
+  height: 100vh;
+  background-color: var(--mintcream);
+  background: var(--bg-section);
+  color: black;
+  font-size: 17px;
+  position: relative;
+  font-family: var(--fonts-content);
+  text-justify: inter-word;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.container-web-section p {
+  position: relative;
 }
 
 footer {
