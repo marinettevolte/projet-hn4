@@ -4,8 +4,7 @@
 # Marinette Volte
 # ----------------------------+
 
-# instead of install.packages() + library()
-# you can use p_load from the pacman package
+# pacman
 pacman::p_load(here, ggraph, igraph, tidytext, tidyverse, widyr, wordcloud)
 source("code/corpus_functions.R")
 

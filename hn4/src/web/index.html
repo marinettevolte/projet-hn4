@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="Untree.co" />
+    <!-- <link rel="shortcut icon" href="favicon.png" /> -->
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>HN4 Marinette Volte</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="unslate_co--site-nav site-nav-target">
+        <ul id="main-nav-links" style="list-style-type: none">
+          <li>
+            <a href="#home-section">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 7.093v-5.093h-3v2.093l3 3zm4 5.907l-12-12-12 12h3v10h7v-5h4v5h7v-10h3zm-5 8h-3v-5h-8v5h-3v-10.26l7-6.912 7 6.99v10.182z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#plan-section">Plan</a>
+          </li>
+          <li>
+            <a href="#collect-data-section">Collecte des données</a>
+          </li>
+          <li>
+            <a href="#voyant-tools-section">Voyant tools</a>
+          </li>
+          <li class="has-children">
+            <a href="#scripts-r-section" class="nav-link">Scripts R</a>
+            <ul class="dropdown">
+              <li>
+                <a href="#lemmatize-container">Lemmatisation</a>
+              </li>
+              <li>
+                <a href="#sentiments-analysis">Analyse des sentiments</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#lemmatize-section" class="nav-link"></a>
+          </li>
+          <li>
+            <a href="#web-section" class="nav-link">Site web</a>
+          </li>
+        </ul>
+
+        <ul id="nav-link-github" style="list-style-type: none">
+          <li>
+            <a target="_blank" href="https://github.com/marinettevolte">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="black"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="feather feather-github"
+                style="height: 24px; width: 24x"
+              >
+                <title>GitHub</title>
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div style="min-height: 100%; position: relative">
+      <main>
+        <section id="home-section">
+          <div class="container-home-section">
+            <h1>Projet Humanités Numériques HN4</h1>
+            <div class="home-presentation">
+              <p>
+                Bienvenue sur mon projet pour les Humanités Numériques 4.
+                L'objectif de ce projet est de mettre en oeuvre les méthodes
+                acquises lors du Master Humanités Numériques et Classiques à
+                l'université Paris-Nanterre pour étudier un corpus littéraire.
+                Pour cette étude, j'ai chisoi d'utiliser comme corpus l'Hymne
+                Homérique à Hermès. Le dieu Hermès est ici la figure qui nous
+                intéresse.
+                <br />
+              </p>
+              <span>Marinette Volte</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="plan-section">
+          <div class="container-plan-section">
+            <h1>Plan</h1>
+            <p>
+              Il s'agit de montrer la puissance de ce dieu en utilisant des
+              outils numériques nous permettant d'analyser ce corpus. Le but de
+              ce projet est de répondre à la question suivante: Comment le poète
+              montre-t-il à travers l’Hymne Homérique à Hermès la légitimité, la
+              détermination et la puissance du dieu Hermès ? L'étude littéraire
+              de ce corpus a permis de réaliser le plan suivant:
+            </p>
+            <div>
+              <details>
+                <summary>
+                  I - Hermès, le dernier né des dieux légitime parmi les
+                  Olympiens
+                </summary>
+                <p>
+                  A) Narration et résumé du texte<br />
+                  B) Naissance divine dudieu Hermès grâce à l’immortalité de ces
+                  deux parents<br />
+                  C) La demeure de Maia, un lieu sacré digne de l’Olympe<br />
+                  D) Les chants d’Hermès mettent en valeur la légitimité du dieu
+                  qui a naturellement sa place parmi les Olympiens 3<br />
+                </p>
+              </details>
+              <details>
+                <summary>
+                  II - Hermès, le dieu déterminé à obtenir ses timai et sa place
+                  parmi les Olympiens grâce à sa rivalité avec Apollon
+                </summary>
+                <p>
+                  A) Le dieu des voleurs: vol des boeufs et ruse d’Hermès<br />
+                  B) Le dieu de la confrontation verbale<br />
+                  C) Le dieu de l’échange et de la réconciliation avec
+                  l'obtention des timai 5
+                </p>
+              </details>
+              <details>
+                <summary>
+                  III - Cette légitimité et cette détermination montrent la
+                  véritable puissance du dieu Hermès
+                </summary>
+                <p>
+                  A) Vivacité d’esprit et techné d’Hermès<br />
+                  B) La puissance d’Hermès est reconnue à la fois par Apollon et
+                  sa mère Maia<br />
+                  C) L’acquisition finale des timai et dualité du dieu Hermès
+                </p>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <section id="collect-data-section">
+          <div class="container-collect-data-section">
+            <h1>Collecte des données</h1>
+            <ol>
+              <li>
+                Données récupérées à partir du site
+                <a
+                  target="_blank"
+                  href="http://www.perseus.tufts.edu/hopper/text.jsp?doc=Perseus:text:1999.01.0137:hymn=4"
+                  >Perseus</a
+                >
+              </li>
+              <li>Texte en anglais et en français</li>
+              <li>
+                Formats:<br />
+                - xml en téléchargeant les fichiers<br />
+                - txt en copiant/collant les textes dans l'éditeur Visual Studio
+                Code
+              </li>
+              <li>Stockage des textes avec GitHub</li>
+            </ol>
+            <div style="display: inline-flex">
+              <img
+                src="./img/perseus.png"
+                alt="perseus"
+                style="width: 100px; height: 100px"
+              />
+              &nbsp;&nbsp;
+              <img
+                src="./img/Vscode.png"
+                alt="vscode"
+                style="width: 100px; height: 100px"
+              />
+              <img
+                src="./img/github.png"
+                alt="github"
+                style="width: 100px; height: 100px"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section id="voyant-tools-section">
+          <div class="container-voyant-tools-section">
+            <h1>Analyse avec voyant tools</h1>
+            <img src="./img/voyant_tools/circus.png" alt="circus" />
+            <p>
+              L’analyse du texte à l’aide de voyant tools met en valeur la
+              puissance et surtout la légitimité de ce dieu en insistant sur
+              l’origine divine de ce dieu et sur l’immortalité de ces deux
+              parents: Zeus et Maia. En effet, le terme διὸς est présent 32 fois
+              dans le corpus. Διὸς désigne à la fois Zeus et la divinité en
+              général. Le graphique représentant la fréquence du terme διὸς tout
+              au long des segments du texte montre que ce terme est présent tout
+              au long du texte et particulièrement au début et à la fin. Cette
+              analyse est cohérente car le début de l’hymne est caractérisé par
+              la généalogie divine du dieu et la fin de l’hymne met en scène
+              l’acquisition des timai d’Hermès. Hermès est le dernier né des
+              dieux et doit obtenir sa place parmi les Olympiens.
+            </p>
+            <img
+              src="./img/voyant_tools/dios graphique.png"
+              alt="dios-grahique"
+            />
+            <p>
+              Le terme μαιάδος ressort également et est présent 15 fois au long
+              du texte. La forme du génitif singulier met encore en lumière
+              l’origine divine de ce dieu. Tout au long du texte, l’auteur
+              insiste sur l’immortalité de Maia qui est pourtant une nymphe
+              mortelle. Le graphique représentant la fréquence du terme μαιάδος
+              tout au long des segments du texte démontre que ce terme est
+              principalement présent à la fin du texte. Peut-être s’agit-il de
+              montrer qu’ Hermès obtient ses timai grâce à Zeus mais aussi grâce
+              à sa mère Maia ?
+            </p>
+            <img src="./img/voyant_tools/maidos.png" alt="maidos" />
+            <p>
+              Le terme υἱός montre également l’origine divine d’Hermès. Trois
+              formes de ce terme sont présents tout au long du texte: υἱός,
+              υἱὸς, υἱέ. La dernière forme apostrophe υἱέ désigne également
+              Hermès mais dans la bouche d’Apollon.<br /><br />
+              Hermès est également le dieu de la confrontation verbale comme
+              nous le montre le terme Μῦθον qui est présent 15 fois dans le
+              corpus. Cela montre l’importance du discours dans l’Hymne
+              Homérique à Hermès.
+            </p>
+            <p>
+              Apollon, le frère d’Hermès joue un rôle important dans l’hymne
+              Homérique à Hermès. En effet, la forme ἀπόλλων est présente 17
+              fois dans ce corpus. La querelle avec Apollon est un événement
+              important dans l’hymne car c’est grâce à cette querelle qu’Hermès
+              obtient ses timai. Cette querelle souligne la détermination du
+              dieu Hermès. Le vol des bœufs d’Apollon est au cœur de cette
+              querelle. La forme βοῶν est présente 14 fois tandis que la forme
+              βοῦς est présente 12 fois. Le graphique représentant la fréquence
+              du terme ἀπόλλων tout au long des segments du texte montre que ce
+              terme est présent à tout au long du texte sauf dans le début de
+              l’hymne. Cela est cohérent car le personnage d’Apollon entre en
+              scène après l’invention de la lyre par Hermès. L’analyse des bœufs
+              met en valeur la vivacité d’esprit ainsi que la techné d’Hermès.
+            </p>
+            <img src="./img/voyant_tools/appolon.png" alt="appolon" />
+            <p>
+              Le terme Θεῶν qui fait écho au terme διὸς est présent 15 fois dans
+              le corpus. Les deux chants d’Hermès célèbrent les dieux et en
+              particulier le deuxième chant d’Hermès qui est réellement
+              théogonique. Hermès raconte la naissance de chaque dieu et la
+              façon dont ils se sont vus attribuer leur sphère d'influence
+              respective. Cela suggère que, puisque Hermès est le dernier né des
+              Olympiens, sa théogonie doit se terminer par sa propre naissance
+              et l'acquisition des honneurs divins. Le graphique représentant la
+              fréquence du terme Θεῶν tout au long des segments du texte montre
+              que ce terme est présent tout au long du texte mais en particulier
+              à la fin où Hermès prend sa place parmi les bienheureux dieux.
+            </p>
+            <img src="./img/voyant_tools/teown.png" alt="teown" />
+            <p></p>
+          </div>
+        </section>
+
+        <section id="scripts-r-section">
+          <div class="container-scripts-r-section">
+            <h1 class="subheading">I. Scripts R</h1>
+            <h2 id="lemmatize-container" class="subheading">
+              I.1. Lemmatisation
+            </h2>
+            <p>
+              En premier lieu, il a fallu lemmatiser le texte avec l'outil
+              <a href="https://dh.chartes.psl.eu/deucalion/">Deucalion</a>.
+              Cette méthode permet d'obtenir la base des mots afin de pouvoir
+              faire des analyses précises.
+            </p>
+            <h2 id="sentiments-analysis" class="subheading">
+              I.2. Analyse algorithmique
+            </h2>
+            <p>
+              La taille du corpus de l'Hymne Homérique à Hermès étant trop
+              faible pour réaliser une analyse quantitative, il a fallu réaliser
+              une analyse sur le contenu du corpus. Mon objectif a été
+              d'extraire les mots positifs et négatifs du corpus afin de montrer
+              la dualité du dieu Hermès qui est à la fois bienvaillant et
+              malveillant. Les outils utilisés pour cette analyse sont le
+              langage R avec l'éditeur RStudio. <br />
+              J'ai commencé par rechercher des listes de mots positifs et
+              négatifs dans les langues grecques et français. La majorité de ces
+              listes étaient disponibles dans des projets GitHub public. Il a
+              ensuite fallu calculer les intersections entre ces listes de mots
+              et le corpus étudié pour obtenir les mots qui sont présents dans
+              les deux ensembles. J'ai ensuite utilisé deux boucles for
+              imbriquées pour compter le nombre de fois que les mots dans
+              l'intersection apparaissent dans le corpus de l'Hymne Homérique à
+              Hermès. Cela m'a permis d'obtenir le nombre de fois que chaque mot
+              positif et négatif apparaissent dans le texte. Enfin, j'ai trié
+              ces listes dans l'ordre décroissant pour obtenir les mots positifs
+              et négatifs les plus présents.<br />L'ensemble de mes travaux
+              algorithmiques liés au langage R sont enregistrés dans le
+              répertoire src/R de GitHub:
+              <a
+                href="https://github.com/marinettevolte/projet-hn4/tree/master/hn4/src"
+                >lien</a
+              >.
+            </p>
+            <h3>I.2.1. Top 10 mots positifs</h3>
+            <p>
+              Sur la graphique ci-dessous est représenté la liste des 10 mots
+              positifs qui apparaissent le plus souvent dans l'Hymne Homérique à
+              Hermès:
+            </p>
+            <img src="./img/R/top10positifs.png" alt="positifs" />
+            <p>
+              πολύς désigne tout ce qui a une grande valeur et également tout ce
+              qui est vaste. Ce terme est utilisé à la fois pour caractériser
+              Hermès mais également la demeure dans laquelle il habite avec sa
+              mère Maïa. ἔργον fait référence aux oeuvres remarquables d'Hermès
+              telles que l'invention du feu ou l'invention de la lyre. ἐθέλω
+              montre l'immense volonté d'Hermès qui sait que sa place est parmi
+              les Olympiens. καλός met en valeur la beauté d'Hermès et de sa
+              demeure. δῶρον fait écho aux différents timai bénéfiques et
+              bienveilants que reçoit Hermès. θαῦμα souligne l'admiration. τιμή
+              désigne les honneurs remarquables qui sont conférés à Hermès.
+              χαίρω insiste sur le bonheur d'Hermès lorsque celui-ci écoute la
+              lyre pour la première fois. Χρυσός désigne la sublime demeure de
+              la nymphe Maïa.
+            </p>
+            <h3 class="subheading">I.2.2. Top 10 mots négatifs</h3>
+            <img src="./img/R/top10negatifs.png" alt="negatifs" />
+            <p>
+              θυμός fait référence à la colère d'Apollon envers Hermès lorsque
+              celui-ci vole ses boeufs. ἄντρον désigne la grotte de Maïa et
+              possède plutôt une valeur négative. La dualité du dieu Hermès fait
+              écho à la dualité de la demeure de Maïa qui est à la fois un
+              temple magnifique et une grotte sombre. πείθω, δαίμων et αἱρέω
+              symbolisent la capacité énorme de persuasion du dieu Hermès qui
+              arrive toujours à convaincre son adversaire. δαίμων et δόλιος font
+              écho à la ruse et la tromperie d'Hermès. μηνύω souligne la
+              dénonciation d'Apollon.
+            </p>
+          </div>
+        </section>
+
+        <section id="web-section">
+          <div class="container-web-section">
+            <h2>Construction du site web</h2>
+            <p>
+              Pour présenter les résultats de ce projet, j'ai choisi de créer un
+              site web avec les langages HTML et CSS. Il y a une barre de
+              navigation qui permet de se rendre facilement dans les différentes
+              sections du site. <br />Le site ne s'adapte pas bien aux écrans de
+              petite taille, il faut donc utiliser un ordinateur pour le
+              regarder.<br /><br />J'ai stocké le code du site dans GitHub afin
+              de pouvoir le mettre en lige en utilisant GitHub Pages.
+            </p>
+          </div>
+          <footer>
+            <div>
+              <p>
+                <small
+                  >&copy;
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  &mdash; Site créé par
+                  <a href="https://github.com/marinettevolte"
+                    ><u>Marinette Volte</u></a
+                  >
+                </small>
+              </p>
+            </div>
+          </footer>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -9,12 +9,12 @@ library(here)
 library(ggplot2)
 
 eng_negative_words <-
-  scan(file=here("src", "data", "english", "sentiments_lexicon", "negative_words_eng.txt"), what = "word")
+  scan(file=here("src", "R", "data", "english", "sentiments_lexicon", "negative_words_eng.txt"), what = "word")
 
 eng_positive_words <-
-  scan(file=here("src", "data", "english", "sentiments_lexicon", "positive_words_eng.txt"), what = "word")
+  scan(file=here("src", "R", "data", "english", "sentiments_lexicon", "positive_words_eng.txt"), what = "word")
 
-to_hermes <- scan(here("src", "data", "english", "to_hermes_eng.txt"), what="word")
+to_hermes <- scan(here("src", "R", "data", "english", "to_hermes_eng.txt"), what="word")
 to_hermes <- gsub(',', '', to_hermes)
 to_hermes <- gsub(':', '', to_hermes)
 to_hermes <- gsub('\\.', '', to_hermes)
@@ -66,7 +66,7 @@ df_positive <- data.frame(noms=names(intersect_positive_w_sort$x), valeurs=inter
 ggplot(head(df_positive, 10), aes(x = reorder(noms, -valeurs), y = valeurs)) +
   geom_bar(stat="identity") +
   labs(x="Noms", y="Valeurs")
-# 
+#
 
 # Ggplot : top 10 negative words
 ggplot(head(df_negative, 10), aes(x = reorder(noms, -valeurs), y = valeurs)) +
